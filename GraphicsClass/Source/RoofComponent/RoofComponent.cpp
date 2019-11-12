@@ -18,6 +18,7 @@ void RoofComponent::paint(Graphics &g)
   p.lineTo(getWidth() - 300, getHeight() - 300);
   p.closeSubPath();
 
+  g.fillPath(p);
   g.strokePath(p, PathStrokeType(15.f));
 }
 
