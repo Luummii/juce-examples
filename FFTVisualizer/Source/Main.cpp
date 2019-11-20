@@ -1,19 +1,23 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "MainComponent.h"
 
-class FFTVisualizerApplication : public JUCEApplication {
+class FFTVisualizerApplication : public JUCEApplication
+{
 public:
   FFTVisualizerApplication() {}
 
-  const String getApplicationName() override {
+  const String getApplicationName() override
+  {
     return ProjectInfo::projectName;
   }
-  const String getApplicationVersion() override {
+  const String getApplicationVersion() override
+  {
     return ProjectInfo::versionString;
   }
   bool moreThanOneInstanceAllowed() override { return true; }
 
-  void initialise(const String &commandLine) override {
+  void initialise(const String &commandLine) override
+  {
     mainWindow.reset(new MainWindow(getApplicationName()));
   }
 
@@ -23,14 +27,11 @@ public:
 
   void anotherInstanceStarted(const String &commandLine) override {}
 
-  class MainWindow : public DocumentWindow {
+  class MainWindow : public DocumentWindow
+  {
   public:
-    MainWindow(String name)
-        : DocumentWindow(
-              name,
-              Desktop::getInstance().getDefaultLookAndFeel().findColour(
-                  ResizableWindow::backgroundColourId),
-              DocumentWindow::allButtons) {
+    MainWindow(String name) : DocumentWindow(name, Desktop::getInstance().getDefaultLookAndFeel().findColour(ResizableWindow::backgroundColourId), DocumentWindow::allButtons)
+    {
       setUsingNativeTitleBar(true);
       setContentOwned(new MainComponent(), true);
 
@@ -40,11 +41,11 @@ public:
       setResizable(true, true);
       centreWithSize(getWidth(), getHeight());
 #endif
-
       setVisible(true);
     }
 
-    void closeButtonPressed() override {
+    void closeButtonPressed() override
+    {
       JUCEApplication::getInstance()->systemRequestedQuit();
     }
 

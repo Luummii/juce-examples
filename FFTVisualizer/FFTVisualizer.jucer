@@ -3,6 +3,19 @@
 <JUCERPROJECT id="AUIUPO" name="FFTVisualizer" projectType="guiapp" jucerVersion="5.4.5">
   <MAINGROUP id="Y0B8rf" name="FFTVisualizer">
     <GROUP id="{86AE05ED-9FE4-12DC-1503-50355915E111}" name="Source">
+      <GROUP id="{B12D3051-7AF5-ED37-08ED-6B91F05B9BC3}" name="Utilities">
+        <FILE id="Rb6jDP" name="Utilities.h" compile="0" resource="0" file="Source/Utilities/Utilities.h"/>
+      </GROUP>
+      <GROUP id="{CA1AD19D-268C-CB4E-887C-F19CE52030F6}" name="VisualizerComponent">
+        <FILE id="E1Pd3e" name="VisualizerComponent.cpp" compile="1" resource="0"
+              file="Source/VisualizerComponent/VisualizerComponent.cpp"/>
+        <FILE id="Qf9HAU" name="VisualizerComponent.h" compile="0" resource="0"
+              file="Source/VisualizerComponent/VisualizerComponent.h"/>
+      </GROUP>
+      <GROUP id="{22E8768D-5518-AB3F-AF0A-E7EBCAB4ADB9}" name="Visualizer">
+        <FILE id="lsfO0v" name="Visualizer.cpp" compile="1" resource="0" file="Source/Visualizer/Visualizer.cpp"/>
+        <FILE id="zp23Ei" name="Visualizer.h" compile="0" resource="0" file="Source/Visualizer/Visualizer.h"/>
+      </GROUP>
       <FILE id="qsz5iz" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="TtpDZq" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
@@ -29,6 +42,7 @@
         <MODULEPATH id="juce_gui_basics" path="../../../../../Programs/JUCE/modules"/>
         <MODULEPATH id="juce_gui_extra" path="../../../../../Programs/JUCE/modules"/>
         <MODULEPATH id="juce_opengl" path="../../../../../Programs/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../Programs/JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
   </EXPORTFORMATS>
@@ -41,6 +55,7 @@
     <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
