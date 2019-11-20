@@ -4,6 +4,10 @@
               jucerVersion="5.4.5">
   <MAINGROUP id="SVbFUx" name="SimpleAudioVisualiser">
     <GROUP id="{30A00D50-2CBC-D52E-8C65-5D5A6040FE48}" name="Source">
+      <GROUP id="{AD402C6B-FE9F-4C1C-1BDD-3B25BA5A0DD9}" name="Visualiser">
+        <FILE id="RqLur9" name="Visualiser.cpp" compile="1" resource="0" file="Source/Visualiser/Visualiser.cpp"/>
+        <FILE id="Wrb2mc" name="Visualiser.h" compile="0" resource="0" file="Source/Visualiser/Visualiser.h"/>
+      </GROUP>
       <FILE id="VfRoFK" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="p9bZal" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
