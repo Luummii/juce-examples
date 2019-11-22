@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "/usr/include",
+        "/usr/local/include",
+        "${workspaceFolder}/**",
+        "/media/luummii/Programs/JUCE/",
+        "/media/luummii/Programs/JUCE/modules/"
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": "",
+        "path": [
+          "/usr/include",
+          "/usr/local/include",
+          "${workspaceFolder}/**",
+          "/media/luummii/Programs/JUCE/",
+          "/media/luummii/Programs/JUCE/modules/"
+        ]
+      },
+      "intelliSenseMode": "clang-x64",
+      "compilerPath": "/usr/bin/gcc-8",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

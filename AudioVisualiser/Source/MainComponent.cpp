@@ -1,5 +1,5 @@
 #include "MainComponent.h"
-#include "./Utilites/Utilites.h"
+#include "./Utilites.h"
 
 MainComponent::MainComponent() : AudioAppComponent(deviceManager)
 {
@@ -68,21 +68,6 @@ void MainComponent::transportStateChange(TransportState state)
     transport.stop();
     LOG(">> PAUSE");
     break;
-  }
-}
-
-void MainComponent::changeListenerCallback(ChangeBroadcaster *source)
-{
-  if (source == &transport)
-  {
-    if (transport.isPlaying())
-    {
-      LOG("isPlaying");
-    }
-    else
-    {
-      LOG("isStoping");
-    }
   }
 }
 

@@ -1,6 +1,6 @@
 #include "../../JuceLibraryCode/JuceHeader.h"
 #include "ControlPanel.h"
-#include "../Utilites/Utilites.h"
+#include "../Utilites.h"
 
 ControlPanel::ControlPanel()
 {

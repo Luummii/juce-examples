@@ -3,7 +3,7 @@
 #include "./Seporator/Seporator.h"
 #include "./ControlPanel/ControlPanel.h"
 
-class MainComponent : public AudioAppComponent, public ChangeListener
+class MainComponent : public AudioAppComponent
 {
 public:
   MainComponent();
@@ -15,8 +15,6 @@ public:
 
   void paint(Graphics &g) override;
   void resized() override;
-
-  void changeListenerCallback(ChangeBroadcaster *source) override;
 
   void setNewFile(File file);
   void transportStateChange(TransportState state);

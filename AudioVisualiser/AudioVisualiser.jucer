@@ -3,9 +3,8 @@
 <JUCERPROJECT id="eeQACj" name="AudioVisualiser" projectType="guiapp" jucerVersion="5.4.5">
   <MAINGROUP id="vjbRMw" name="AudioVisualiser">
     <GROUP id="{EB5A82C0-F527-44E0-37C2-0E53C6F8791C}" name="Source">
-      <GROUP id="{848BD83C-0119-D19C-5CB1-3CBDD91CECFD}" name="Utilites">
-        <FILE id="L8QpxW" name="Utilites.h" compile="0" resource="0" file="Source/Utilites/Utilites.h"/>
-      </GROUP>
+      <FILE id="qIPHNT" name="UI.h" compile="0" resource="0" file="Source/UI.h"/>
+      <FILE id="L8QpxW" name="Utilites.h" compile="0" resource="0" file="Source/Utilites/Utilites.h"/>
       <GROUP id="{154A1A59-1CF6-DA80-99BB-1A06DE769709}" name="ControlPanel">
         <FILE id="QyWx7I" name="ControlPanel.cpp" compile="1" resource="0"
               file="Source/ControlPanel/ControlPanel.cpp"/>

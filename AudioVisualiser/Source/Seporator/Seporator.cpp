@@ -1,6 +1,6 @@
 #include "../../JuceLibraryCode/JuceHeader.h"
 #include "Seporator.h"
-#include "../Utilites/Utilites.h"
+#include "../Utilites.h"
 
 Seporator::Seporator()
 {
